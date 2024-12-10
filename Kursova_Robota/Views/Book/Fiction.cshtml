@@ -1,0 +1,32 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Жанр: " + ViewBag.GenreName;
+    <link rel="stylesheet" href="/css/genre.css" />
+}
+
+<h2 class="text-center mb-4">Книги жанру: @ViewBag.GenreName</h2>
+
+@if (!string.IsNullOrEmpty(ViewBag.Message))
+{
+    <div class="alert alert-warning text-center">@ViewBag.Message</div>
+}
+
+<div class="container">
+    <div class="row">
+        @foreach (var book in Model)
+        {
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4 d-flex">
+                <div class="card flex-grow-1">
+                    <img src="@Url.Content("~/Images/" + book.ImagePath)" class="card-img-top" alt="Обкладинка книги" />
+                    <div class="card-body text-center">
+                        <h5 class="card-title">@book.Title</h5>
+                        <p class="card-author text-muted">@book.Author</p>
+                        <p class="card-price">Ціна: @book.Price.ToString("C", new System.Globalization.CultureInfo("uk-UA"))</p>
+                        <!-- Кнопка для переходу на сторінку деталей книги -->
+                        <a href="@Url.Action("Details", "Book", new { id = book.Id })" class="btn btn-primary">Дізнатися більше</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

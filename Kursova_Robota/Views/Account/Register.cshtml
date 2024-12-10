@@ -1,0 +1,52 @@
+﻿@model Kursova_Robota.Models.User
+<link rel="stylesheet" href="/css/register.css">
+
+        <!-- Ліва частина: Привітання -->
+<div class="login-page">
+    <div class="login-left">
+        <h1>Ласкаво просимо до YourBook!</h1>
+        <p>Пройдіть реєстрацію, щоб отримати доступ до вашого профілю, переглянути замовлення та зробити покупки.</p>
+    </div>
+</div>
+<div class="auth-container">
+    <h2 class="text-center">Реєстрація</h2>
+    <form asp-action="Register" method="post">
+        <div class="form-group mb-3">
+            <label asp-for="Username">Ім'я користувача</label>
+            <input asp-for="Username" class="form-control" placeholder="Введіть ім'я користувача" required />
+            <span asp-validation-for="Username" class="text-danger"></span>
+        </div>
+        <div class="form-group mb-3">
+            <label asp-for="Email">Електронна пошта</label>
+            <input asp-for="Email" class="form-control" placeholder="Введіть вашу пошту" required />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+        <div class="form-group mb-3">
+            <label asp-for="PhoneNumber">Номер телефону(Не обов'яково)</label>
+            <input asp-for="PhoneNumber" class="form-control" placeholder="Введіть номер телефону"/>
+            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+        </div>
+        <div class="form-group mb-3">
+            <label asp-for="Password">Пароль</label>
+            <input asp-for="Password" type="password" class="form-control" placeholder="Введіть пароль" required />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+        <div class="form-group mb-3">
+            <label asp-for="ConfirmPassword">Підтвердження пароля</label>
+            <input asp-for="ConfirmPassword" type="password" class="form-control" placeholder="Підтвердіть пароль" required />
+            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+        </div>
+        <div class="form-group form-check mb-3">
+            <input asp-for="Subscribe" type="checkbox" class="form-check-input" />
+            <label asp-for="Subscribe" class="form-check-label">Підписатись на розсилку новин</label>
+        </div>
+        <div class="form-group form-check mb-3">
+            <input asp-for="AgreePrivacyPolicy" type="checkbox" class="form-check-input" required />
+            <label asp-for="AgreePrivacyPolicy" class="form-check-label">
+                Я погоджуюсь з обробкою персональних даних і ознайомився з
+                <a href="/PrivacyPolicy" target="_blank">політикою конфіденційності</a>.
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Зареєструватись</button>
+    </form>
+</div>

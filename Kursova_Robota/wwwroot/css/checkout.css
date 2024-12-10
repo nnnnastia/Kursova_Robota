@@ -1,0 +1,100 @@
+﻿/* Заголовок оформлення замовлення */
+h1.text-center.mb-4 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Контейнер форми */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Поля вводу */
+.form-control {
+    font-size: 1.1rem;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 10px 15px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .form-control:focus {
+        border-color: #ff7e5f;
+        box-shadow: 0 0 8px rgba(255, 126, 95, 0.5);
+    }
+
+/* Мітки */
+.form-label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Текстова область */
+textarea.form-control {
+    resize: none;
+}
+
+/* Кнопка підтвердження замовлення */
+button.btn-primary {
+    background-color: #ff7e5f;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 50px;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    margin-top: 20px;
+}
+
+    button.btn-primary:hover {
+        background-color: #fa5f39;
+        transform: scale(1.05);
+    }
+
+/* Повідомлення про обов'язкові поля */
+.needs-validation [required]:invalid {
+    border-color: #ff7e5f;
+    background-color: #ffe5e0;
+}
+
+    .needs-validation [required]:invalid:focus {
+        box-shadow: 0 0 8px rgba(255, 126, 95, 0.5);
+    }
+
+/* Для підтвердження успішності */
+.needs-validation [required]:valid {
+    border-color: #28a745;
+    background-color: #e6ffee;
+}
+
+/* Додаткові стилі для форми */
+form {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Примітки до замовлення */
+textarea {
+    height: 100px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+    textarea:focus {
+        border-color: #ff7e5f;
+        box-shadow: 0 0 8px rgba(255, 126, 95, 0.5);
+    }

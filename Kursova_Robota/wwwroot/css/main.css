@@ -1,0 +1,279 @@
+﻿/* Основні стилі для банера */
+.text-center.my-5 {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: #fff;
+    padding: 50px 30px;
+    border-radius: 15px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .text-center.my-5:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Заголовок банера */
+    .text-center.my-5 h2 {
+        font-size: 2.8rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+    }
+
+    /* Текст банера */
+    .text-center.my-5 p {
+        font-size: 1.3rem;
+        line-height: 1.5;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    /* Стилі для кнопок */
+    .text-center.my-5 .btn {
+        background-color: #fff;
+        color: #ff7e5f;
+        padding: 12px 24px;
+        font-size: 1rem;
+        font-weight: bold;
+        border: none;
+        border-radius: 50px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+        .text-center.my-5 .btn:hover {
+            background-color: #ff7e5f;
+            color: #fff;
+        }
+
+/* Стилі для каруселі */
+.carousel-inner {
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Оформлення кожного слайда */
+.carousel-item .banner {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+    .carousel-item .banner:hover {
+        background-color: #f1f1f1;
+    }
+
+/* Стилі для зображень книг */
+.carousel-item img.banner-img {
+    max-height: 260px; /* Зменшено висоту зображення */
+    object-fit: contain; /* Щоб зображення зберігало пропорції */
+    margin-top: 15px; /* Відступ зверху */
+    margin-bottom: 15px; /* Відступ знизу */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+    .carousel-item img.banner-img:hover {
+        transform: scale(1.05);
+    }
+
+/* Відступи для блоку банера */
+.carousel-item .banner {
+    padding: 20px 15px; /* Відступи всередині банера */
+    border-radius: 15px;
+    background-color: #f9f9f9;
+}
+/* Текст під зображенням */
+.carousel-item .banner-text h5 {
+    font-size: 1.7rem;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #444;
+    text-transform: uppercase;
+}
+
+/* Стилі для кнопок */
+.carousel-item .btn-primary {
+    background-color: #ff7e5f;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    margin-top: 10px; /* Відступ зверху для кнопки */
+    margin-bottom: 15px; /* Відступ знизу для кнопки */
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.carousel-item .btn-primary:hover {
+    background-color: #feb47b;
+}
+
+/* Стилі для бокового блоку (aside) */
+aside .bg-light {
+    background-color: #fff !important;
+    border: 1px solid #eee;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+    aside .bg-light:hover {
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+/* Стилі для секції жанрів книг */
+aside .bg-light {
+    background-color: #fff !important;
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+    aside .bg-light h4 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+        color: #ff7e5f;
+        text-transform: uppercase;
+    }
+
+    aside .bg-light ul {
+        padding-left: 0;
+    }
+
+    aside .bg-light li {
+        margin-bottom: 10px;
+    }
+
+    aside .bg-light a {
+        font-size: 1.2rem;
+        color: #444;
+        text-decoration: none;
+        transition: color 0.3s ease, padding-left 0.3s ease;
+    }
+
+        aside .bg-light a:hover {
+            color: #ff7e5f;
+            padding-left: 10px; /* Плавний відступ при наведенні */
+        }
+
+/* Стилі для секції популярних книг */
+section .popular-books {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+    section .popular-books h2 {
+        color: #444;
+        font-size: 2rem;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    section .popular-books .book-img {
+        max-height: 180px;
+        object-fit: contain;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+
+        section .popular-books .book-img:hover {
+            transform: scale(1.05);
+        }
+
+    section .popular-books h6 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin-top: 10px;
+        color: #555;
+    }
+
+    section .popular-books p {
+        font-size: 1rem;
+        color: #777;
+    }
+/* Стилі для кнопки "Дізнатися більше" */
+.popular-books .btn-primary {
+    background-color: #ff7e5f;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+    .popular-books .btn-primary:hover {
+        background-color: #feb47b;
+        transform: translateY(-3px);
+    }
+
+/* Стилі для навігації */
+.navbar {
+    padding: 10px 20px;
+    border-radius: 0 0 15px 15px;
+}
+
+/* Логотип */
+.navbar-brand img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Елементи навігації */
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+    .navbar-nav .nav-link:hover {
+        color: #ff7e5f;
+    }
+
+    /* Іконки */
+    .navbar-nav .nav-link i {
+        color: #555;
+        transition: color 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover i {
+        color: #ff7e5f;
+    }
+
+/* Корзина */
+.nav-item.position-relative .badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    font-size: 0.75rem;
+    background-color: #ff7e5f;
+}
+
+/* Кнопки входу та реєстрації */
+.navbar-nav .nav-link.btn-auth {
+    background-color: #ff7e5f;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+    .navbar-nav .nav-link.btn-auth:hover {
+        background-color: #feb47b;
+        color: #fff;
+    }
+
+/* Дропдаун користувача */
+.navbar-nav .dropdown-menu {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}

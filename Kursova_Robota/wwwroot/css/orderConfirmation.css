@@ -1,0 +1,90 @@
+﻿/* Заголовок */
+h1.text-center {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    padding: 20px;
+    border-radius: 15px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* Контейнер */
+.container {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #333;
+    border-radius: 10px;
+}
+
+    /* Список деталей замовлення */
+    .container ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+        .container ul li {
+            margin-bottom: 10px;
+        }
+
+            .container ul li strong {
+                color: #ff7e5f;
+            }
+
+/* Заголовок таблиці */
+h4 {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 2px solid #ff7e5f;
+    padding-bottom: 10px;
+}
+
+/* Таблиця */
+.table {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+    .table th,
+    .table td {
+        padding: 15px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .table th {
+        background-color: #f8f9fa;
+        font-weight: bold;
+        color: #333;
+        border-bottom: 2px solid #ddd;
+    }
+
+    .table td {
+        font-size: 1.1rem;
+        color: #333;
+    }
+
+/* Кнопка повернення */
+.return-button {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    background-color: #ff7e5f;
+    color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+    .return-button:hover {
+        background-color: #ff714f;
+    }

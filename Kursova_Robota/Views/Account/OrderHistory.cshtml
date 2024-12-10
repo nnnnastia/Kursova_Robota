@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Kursova_Robota.Models.Order>
+<link rel="stylesheet" href="/css/order-history.css">
+
+<h1>Історія покупок</h1>
+
+@if (!Model.Any())
+{
+    <p>Ви ще не зробили жодного замовлення.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Дата</th>
+                <th>Статус</th>
+                <th>Товари</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var order in Model)
+            {
+                <tr>
+                    <td>@order.OrderDate.ToShortDateString()</td>
+                    <td>@order.Status</td>
+                    <td>
+                        <ul>
+                            @foreach (var item in order.Items)
+                            {
+                                <li>@item.Book.Title x @item.Quantity</li>
+                            }
+                        </ul>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

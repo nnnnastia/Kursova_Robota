@@ -1,0 +1,100 @@
+﻿/* Загальний стиль контейнера */
+.container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовок */
+h1, h3 {
+    color: #ff7e5f;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Стилі для таблиці деталей замовлення */
+.table {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+    .table th, .table td {
+        padding: 15px;
+        text-align: center;
+    }
+
+.table-striped tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.table-bordered {
+    border: 1px solid #ddd;
+}
+
+.table .btn {
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+    .table .btn:hover {
+        background-color: #feb47b;
+    }
+
+/* Стилі для кнопок "Назад" */
+.btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+    .btn-secondary:hover {
+        background-color: #feb47b;
+        color: #fff;
+    }
+
+/* Стилі для приміток */
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Стилі для кнопок */
+button[type="submit"], .btn-secondary {
+    background-color: #ff7e5f;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+    button[type="submit"]:hover, .btn-secondary:hover {
+        background-color: #feb47b;
+        color: #fff;
+    }
+
+/* Поля форми */
+.form-group input, .form-group textarea, .form-group select {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+    .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+        border-color: #ff7e5f;
+        box-shadow: 0 0 5px rgba(255, 126, 95, 0.5);
+    }

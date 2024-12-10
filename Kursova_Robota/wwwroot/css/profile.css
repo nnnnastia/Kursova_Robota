@@ -1,0 +1,172 @@
+﻿/* Загальні стилі для контейнера профілю та редагування профілю */
+.profile-container, .edit-profile-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #ff7e5f;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Стилі для текстових блоків */
+p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+strong {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Стилі для кнопок */
+.btn {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px;
+    text-align: center;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary {
+    border-color: #007bff;
+    color: #007bff;
+}
+
+    .btn-outline-primary:hover {
+        background-color: #007bff;
+        color: #fff;
+    }
+
+.btn-warning {
+    background-color: #ff7e5f;
+    color: #fff;
+}
+
+    .btn-warning:hover {
+        background-color: #feb47b;
+    }
+
+/* Вирівнювання та відступи для кнопок */
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+/* Стилі для полів форми (редагування профілю) */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    border-radius: 5px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    width: 100%;
+}
+
+    .form-control:focus {
+        border-color: #ff7e5f;
+        box-shadow: 0 0 5px rgba(255, 126, 95, 0.5);
+    }
+
+/* Стилі для повідомлень про помилки */
+.alert {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-color: #f5c6cb;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+    .alert ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .alert li {
+        font-size: 1rem;
+    }
+
+/* Кнопка "Зберегти зміни" */
+.btn-primary {
+    background-color: #ff7e5f;
+    color: white;
+    font-size: 1.1rem;
+    padding: 12px;
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .btn-primary:hover {
+        background-color: #feb47b;
+    }
+
+button[type="submit"] {
+    margin-top: 20px;
+}
+
+/* Мобільний вигляд */
+@media (max-width: 768px) {
+    .profile-container, .edit-profile-container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .btn {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+
+    .d-flex {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .form-control {
+        padding: 10px;
+    }
+
+    .btn-primary {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}

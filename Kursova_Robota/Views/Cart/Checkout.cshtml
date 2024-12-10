@@ -1,0 +1,27 @@
+﻿@model Kursova_Robota.Models.CheckoutViewModel
+
+<link rel="stylesheet" href="/css/checkout.css" />
+
+<h1 class="text-center mb-4">Оформлення замовлення</h1>
+
+<div class="container">
+    <form asp-action="PlaceOrder" asp-controller="Cart" method="post" class="needs-validation" novalidate>
+        <div class="mb-3">
+            <label for="FullName" class="form-label">ФІО</label>
+            <input type="text" class="form-control" id="FullName" name="FullName" placeholder="Введіть ваше ім'я" required />
+        </div>
+        <div class="mb-3">
+            <label for="Address" class="form-label">Адреса доставки</label>
+            <input type="text" class="form-control" id="Address" name="Address" placeholder="Введіть адресу доставки" required />
+        </div>
+        <div class="mb-3">
+            <label for="PhoneNumber" class="form-label">Номер телефону</label>
+            <input type="tel" class="form-control" id="PhoneNumber" name="PhoneNumber" placeholder="Введіть номер телефону" required />
+        </div>
+        <div class="mb-3">
+            <label for="AdditionalNotes" class="form-label">Примітки до замовлення</label>
+            <textarea class="form-control" id="AdditionalNotes" name="AdditionalNotes" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Підтвердити замовлення</button>
+    </form>
+</div>

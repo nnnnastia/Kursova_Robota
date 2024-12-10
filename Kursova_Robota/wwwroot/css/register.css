@@ -1,0 +1,209 @@
+/* Загальні стилі для сторінки входу та реєстрації */
+.auth-container {
+	max-width: 800px;
+	margin: 50px auto;
+	padding: 40px;
+	background-color: #fff;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	border-radius: 12px;
+	font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+	font-size: 2.2rem;
+	font-weight: bold;
+	color: #ff7e5f;
+	text-align: center;
+	margin-bottom: 5px; /* Ще більше зменшено відступ */
+}
+
+.text-center {
+	text-align: center;
+}
+
+.form-group {
+	margin-bottom: 1.3rem;
+}
+
+.form-control {
+	border-radius: 5px;
+	padding: 15px;
+	border: 1px solid #ddd;
+	font-size: 1rem;
+	width: 100%;
+}
+
+	.form-control:focus {
+		border-color: #ff7e5f;
+		box-shadow: 0 0 5px rgba(255, 126, 95, 0.5);
+	}
+
+.btn-primary {
+	background-color: #ff7e5f;
+	color: #fff;
+	font-size: 1.1rem;
+	padding: 14px;
+	width: 100%;
+	border-radius: 50px;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+	.btn-primary:hover {
+		background-color: #feb47b;
+	}
+
+.text-secondary {
+	color: #6c757d;
+}
+
+	.text-secondary:hover {
+		color: #ff7e5f;
+	}
+
+/* Ліва частина для сторінки входу */
+.login-left {
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+}
+
+	.login-left h1 {
+		font-size: 2.8rem;
+		color: #ff7e5f;
+		margin-bottom: 5px; /* Ще більше зменшено відступ */
+	}
+
+	.login-left p {
+		font-size: 1.1rem;
+		color: #555;
+		margin-bottom: 15px; /* Ще більше зменшено відступ */
+	}
+
+/* Права частина для сторінки входу */
+.login-right {
+	width: 100%;
+	padding: 20px;
+}
+
+	.login-right .login-card {
+		background-color: #fff;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+		padding: 40px;
+		border-radius: 12px;
+	}
+
+		.login-right .login-card h2 {
+			font-size: 2rem;
+			color: #ff7e5f;
+			margin-bottom: 20px;
+		}
+
+.social-login p {
+	font-size: 1rem;
+	margin-bottom: 10px;
+}
+
+.social-btn {
+	padding: 12px 20px;
+	font-size: 1rem;
+	border-radius: 30px;
+	transition: background-color 0.3s ease;
+}
+
+	.social-btn:hover {
+		background-color: #ff7e5f;
+		color: white;
+	}
+
+	.social-btn i {
+		margin-right: 10px;
+	}
+
+/* Відступи та вирівнювання для кнопок */
+.btn-outline-danger {
+	border-color: #ff7e5f;
+	color: #ff7e5f;
+}
+
+	.btn-outline-danger:hover {
+		background-color: #ff7e5f;
+		color: white;
+	}
+
+.btn-outline-primary {
+	border-color: #007bff;
+	color: #007bff;
+}
+
+	.btn-outline-primary:hover {
+		background-color: #007bff;
+		color: white;
+	}
+
+/* Кастомні стилі для елементів форми */
+.form-check-input {
+	width: 18px;
+	height: 18px;
+	margin-top: 5px;
+}
+
+.form-check-label {
+	font-size: 0.9rem;
+}
+
+.form-check-input:focus {
+	box-shadow: none;
+}
+
+/* Спільні стилі для посилань */
+a {
+	color: #ff7e5f;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+/* Стилі для контейнера авторизації */
+.login-page {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+	padding: 50px;
+	flex-wrap: wrap;
+}
+
+/* Мобільний вигляд */
+@media (max-width: 768px) {
+	.login-page {
+		flex-direction: column;
+		padding: 20px;
+	}
+
+	.login-left, .login-right {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+		.login-right .login-card {
+			padding: 20px;
+		}
+
+	h1, h2 {
+		font-size: 1.8rem;
+	}
+
+	.form-control {
+		padding: 12px;
+	}
+
+	.btn-primary {
+		padding: 12px;
+		font-size: 1rem;
+	}
+}

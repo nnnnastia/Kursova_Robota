@@ -1,0 +1,48 @@
+﻿@model Kursova_Robota.Models.Book
+
+<link rel="stylesheet" href="/css/details.css" />
+
+@if (Model != null)
+{
+    <div class="container">
+        <!-- Основна інформація -->
+        <div class="row mt-4">
+            <!-- Ліва колонка з обкладинкою -->
+            <div class="col-md-4">
+                <div class="book-cover">
+                    <img src="@Url.Content("~/Images/" + Model.ImagePath)" alt="@Model.Title" class="img-fluid rounded" />
+                </div>
+            </div>
+
+            <!-- Права колонка з деталями -->
+            <div class="col-md-8">
+                <h1 class="book-title">@Model.Title</h1>
+                <h2 class="book-author"><strong>Автор:</strong> @Model.Author</h2>
+                <p class="book-genre"><strong>Жанр:</strong> @Model.Genre?.Name</p>
+
+                <p class="book-price">
+                    <span class="current-price"><strong>Ціна:</strong> @Model.Price.ToString("C", new System.Globalization.CultureInfo("uk-UA"))</span>
+                </p>
+
+                <form asp-action="AddToCart" asp-controller="Cart" method="post" class="add-to-cart-form">
+                    <input type="hidden" name="bookId" value="@Model.Id" />
+                    <input type="number" name="quantity" value="1" min="1" class="quantity-input" />
+                    <button type="submit" class="btn btn-danger">До кошика</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Опис книги -->
+        <div class="book-description mt-4">
+            <h3>Опис книги</h3>
+            <p>@Model.Description</p>
+        </div>
+    </div>
+}
+else
+{
+    <div class="container text-center mt-4">
+        <h2>Книга не знайдена</h2>
+        <a href="@Url.Action("Index", "Home")" class="btn btn-secondary mt-3">Назад</a>
+    </div>
+}

@@ -1,0 +1,41 @@
+﻿@model Kursova_Robota.Models.Order
+
+<link rel="stylesheet" href="/css/order-details.css">
+
+<h1 class="text-center mb-4">Деталі замовлення #@Model.Id</h1>
+
+<div class="container">
+    <h3>Інформація про користувача:</h3>
+    <p><strong>Ім'я:</strong> @Model.FullName</p>
+    <p><strong>Телефон:</strong> @Model.PhoneNumber</p>
+    <p><strong>Адреса:</strong> @Model.Address</p>
+    <p><strong>Примітки:</strong> @Model.Notes</p>
+
+    <h3>Список товарів:</h3>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Назва книги</th>
+                <th>Кількість</th>
+                <th>Ціна</th>
+                <th>Загальна ціна</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Items)
+            {
+                <tr>
+                    <td>@item.Book.Title</td>
+                    <td>@item.Quantity</td>
+                    <td>@item.Book.Price.ToString("C")</td>
+                    <td>@(item.Quantity * item.Book.Price)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <h3>Статус замовлення:</h3>
+    <p>@Model.Status</p>
+
+    <a href="/Admin/Orders" class="btn btn-secondary">Назад до списку замовлень</a>
+</div>

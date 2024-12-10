@@ -1,0 +1,113 @@
+﻿/* Загальні стилі для сторінки */
+.container {
+    margin-top: 30px;
+}
+
+/* Стилі для заголовку сторінки */
+h1.text-center {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff7e5f;
+    border-color: #000000;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Стилі для таблиці */
+.table {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+    .table th, .table td {
+        padding: 15px;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    .table th {
+        background-color: #ff7e5f;
+        color: white;
+        font-weight: bold;
+    }
+
+.table-striped tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.table-bordered {
+    border: 1px solid #ddd;
+}
+
+.table .btn {
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 8px 20px;
+    transition: background-color 0.3s ease;
+}
+
+/* Стилі для кнопок */
+.table .btn-primary {
+    background-color: #ff7e5f;
+    color: white;
+}
+
+    .table .btn-primary:hover {
+        background-color: #feb47b;
+    }
+
+/* Стилі для кнопки "Деталі" */
+.table .btn-info {
+    background-color: #17a2b8;
+    color: white;
+}
+
+    .table .btn-info:hover {
+        background-color: #138496;
+    }
+
+/* Стилі для select і кнопки "Обновити" в колонці "Статус" */
+.form-select {
+    font-size: 1rem;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+    .form-select:focus {
+        border-color: #ff7e5f;
+        box-shadow: 0 0 5px rgba(255, 126, 95, 0.5);
+    }
+
+.btn-sm {
+    padding: 6px 15px;
+    font-size: 0.9rem;
+}
+
+/* Додаткові стилі для кнопок в таблиці */
+.btn {
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 8px 20px;
+    transition: background-color 0.3s ease;
+}
+
+/* Стилі для кнопки "Обновити" */
+.btn-primary {
+    background-color: #ff7e5f;
+    color: white;
+}
+
+    .btn-primary:hover {
+        background-color: #feb47b;
+    }
+
+/* Розміри таблиці */
+.table {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}

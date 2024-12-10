@@ -1,0 +1,126 @@
+﻿/* Основні стилі для тіла */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Блок з обкладинкою книги */
+.book-cover img {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Деталі книги */
+.book-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.book-author {
+    font-size: 1.5rem;
+    color: #e63946;
+    margin-bottom: 15px;
+}
+
+.book-price {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #e63946;
+    margin-bottom: 20px;
+}
+
+    .book-price .note {
+        font-size: 0.9rem;
+        color: #666;
+    }
+
+/* Форма для додавання до кошика */
+.add-to-cart-form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.quantity-input {
+    width: 60px;
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.btn-danger {
+    background-color: #ff7e5f;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+    .btn-danger:hover {
+        background-color: #feb47b;
+        color: #fff;
+    }
+
+/* Опис книги */
+.book-description h3 {
+    font-size: 1.6rem;
+    color: #333;
+    border-bottom: 2px solid #ff7e5f;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.book-description p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Загальні стилі для кнопок */
+.btn {
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 12px 24px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+    .btn:hover {
+        background-color: #feb47b;
+        color: #fff;
+    }
+
+.btn-primary, .btn-success, .btn-danger {
+    background-color: #ff7e5f;
+    color: #fff;
+}
+
+    /* Спеціалізовані стилі для кнопок */
+    .btn-primary:hover, .btn-danger:hover, .btn-success:hover {
+        background-color: #feb47b;
+    }
+
+/* Стилі для полів форми */
+.form-group input, .form-group textarea, .form-group select {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+    .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+        border-color: #ff7e5f;
+        box-shadow: 0 0 5px rgba(255, 126, 95, 0.5);
+    }

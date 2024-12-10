@@ -1,0 +1,101 @@
+﻿/* Основні стилі для сторінки історії покупок */
+.history-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Заголовок */
+h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #ff7e5f;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Стилі для таблиці */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+    .table th, .table td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .table th {
+        background-color: #f7f7f7;
+        color: #333;
+        font-weight: bold;
+    }
+
+    .table td {
+        color: #555;
+    }
+
+    .table ul {
+        padding-left: 20px;
+        margin: 0;
+    }
+
+    .table li {
+        font-size: 1rem;
+    }
+
+/* Стилі для повідомлення про відсутність замовлень */
+p {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+}
+
+/* Стилі для кнопок */
+.btn-primary {
+    background-color: #ff7e5f;
+    color: #fff;
+    font-size: 1rem;
+    padding: 12px;
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .btn-primary:hover {
+        background-color: #feb47b;
+    }
+
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 768px) {
+    .history-container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .table th, .table td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .table li {
+        font-size: 0.9rem;
+    }
+
+    .btn-primary {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,107 @@
+﻿/* Заголовок сторінки жанру */
+h2.text-center.mb-4 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    letter-spacing: 1px;
+}
+
+/* Стилі для попереджувального повідомлення */
+.alert-warning {
+    background-color: #ffecb3;
+    color: #333;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Контейнер для книг */
+.container {
+    margin-top: 30px;
+}
+
+/* Стилі для кожної картки книги */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+/* Обкладинка книги */
+.card-img-top {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Стилі для тіла картки */
+.card-body {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* Назва книги */
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Автор книги */
+.card-author {
+    font-size: 1.1rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+/* Ціна книги */
+.card-price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #e63946;
+    margin-bottom: 15px;
+}
+
+/* Кнопка "Дізнатися більше" */
+.card .btn {
+    background-color: #ff7e5f;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+    /* Ховер ефект для кнопки */
+    .card .btn:hover {
+        background-color: #feb47b;
+        color: #fff;
+    }
+
+/* Стилі для колонок книг */
+.col-sm-6.col-md-4.col-lg-3.mb-4.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+/* Міжрядковий відступ для кожної картки */
+.col-sm-6.col-md-4.col-lg-3.mb-4 {
+    margin-bottom: 30px;
+}

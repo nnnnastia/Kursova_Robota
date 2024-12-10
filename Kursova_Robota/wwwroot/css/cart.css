@@ -1,0 +1,113 @@
+﻿/* Заголовок корзини */
+h1.text-center.mb-4 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Якщо корзина пуста */
+.text-center {
+    font-size: 1.25rem;
+    color: #666;
+    padding: 30px;
+}
+
+/* Таблиця товарів в корзині */
+.table {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+    .table th,
+    .table td {
+        padding: 15px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .table th {
+        background-color: #f8f9fa;
+        font-weight: bold;
+        color: #333;
+        border-bottom: 2px solid #ddd;
+    }
+
+    .table td {
+        font-size: 1.1rem;
+        color: #333;
+    }
+
+/* Кнопки змінення кількості товару */
+.btn-light {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    color: #333;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+}
+
+    .btn-light:hover {
+        background-color: #e2e6ea;
+    }
+
+span {
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+
+/* Кнопка видалення товару */
+.btn-danger {
+    background-color: #f74d23;
+    color: #fff;
+    font-size: 1rem;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+    .btn-danger:hover {
+        background-color: #d12e06;
+    }
+
+/* Кнопки для переходу до інших дій */
+.text-end .btn {
+    margin: 10px;
+    font-size: 1.1rem;
+    padding: 12px 24px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.text-end .btn-secondary {
+    background-color: #ff7e5f;
+    color: #fff;
+}
+
+    .text-end .btn-secondary:hover {
+        background-color: #ff714f;
+    }
+
+.text-end .btn-primary {
+    background-color: #ff7e5f;
+    color: #fff;
+}
+
+    .text-end .btn-primary:hover {
+        background-color: #ff714f;
+    }
+
+/* Якщо корзина пуста */
+.container p {
+    font-size: 1.5rem;
+    color: #666;
+    font-weight: bold;
+    padding-top: 50px;
+}
